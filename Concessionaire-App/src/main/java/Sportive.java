@@ -27,7 +27,7 @@ public class Sportive extends Car implements PrintDescription, Exportable{
     }
 
     @Override
-    public void getExportInfo() {
-        return "";
+    public String getExportInfo() {
+        return getModel()+ "-"+getBrand()+"-"+getFuel()+"-"+getMaxSpeed();
     }
 }

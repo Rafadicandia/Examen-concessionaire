@@ -1,3 +1,3 @@
 public interface Exportable {
-    public void getExportInfo();
+    public String getExportInfo();
 }
