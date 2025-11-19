@@ -1,4 +1,4 @@
-public class Sportive extends Car implements PrintDescription{
+public class Sportive extends Car implements PrintDescription, Exportable{
     private double maxSpeed;
 
     public Sportive(String brand, String model, String fuel, int fabricationYear, double maxSpeed) {
@@ -24,5 +24,10 @@ public class Sportive extends Car implements PrintDescription{
                 +" can sepeed up to "+getMaxSpeed()+" km/h,"
                 +"providing safety as well as elegance in every corner."
                 ;
+    }
+
+    @Override
+    public void getExportInfo() {
+        return "";
     }
 }
