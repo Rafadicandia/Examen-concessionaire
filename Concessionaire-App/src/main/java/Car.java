@@ -1,4 +1,4 @@
-public class Car {
+public class Car implements PrintDescription{
     private String brand;
     private String model;
     private String fuel;
@@ -57,5 +57,10 @@ public class Car {
 
     public void setFabricationYear(int fabricationYear) {
         this.fabricationYear = fabricationYear;
+    }
+
+    @Override
+    public String getCarDescription() {
+        return "";
     }
 }
